@@ -11,7 +11,7 @@ app.controller('buscador', function($scope, $http){
 		$scope.boton = "Buscando...";
 
 		// $http.get('http://pokeapi.co/api/v2/pokemon/pikachu/').then(
-		$http.get('http://pokeapi.co/api/v2/pokemon/'+$scope.nombre).then(
+		$http.get('https://pokeapi.co/api/v2/pokemon/'+$scope.nombre).then(
 			function(respuesta) { // Esta función anónima se ejecuta cuando el resultado fue Exitoso
 				// data o respuesta o el nombre que quieras
 				console.log("Todo ok", respuesta);
